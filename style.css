@@ -1,0 +1,481 @@
+/* Reset */
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+  }
+
+a {
+    text-decoration: none;
+
+}
+
+ul {
+    list-style: none;
+}
+
+#showcase {
+  background: url('./images/Volleyballmain.jpg') no-repeat center center/cover;
+  height: 800px;
+  color: white;
+  font-family: 'Inconsolata', monospace;
+}
+
+.logo {
+    cursor: pointer;
+    height: 8em;
+    padding: 1em;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbar ul {
+    padding: 2.5em;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#navbar ul li {
+    padding: 1em;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#navbar ul li a {
+    color: white;
+}
+
+#navbar ul li a:hover {
+    color: skyblue;
+}
+
+.title_box {
+    text-align: center;
+    padding: 10em;
+}
+
+.title_box h1 {
+    font-size: 6em;
+}
+
+.title_box h3 {
+    font-size: 2em;
+}
+
+.container {
+    margin: auto;
+    max-width: 1200px;
+    overflow: auto;
+    padding: 0 20px;
+  }
+
+.about {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 4em;
+}
+
+.about .info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about h3 {
+    font-size: 2em;
+}
+
+.about h5 {
+    color: rgb(35, 170, 223);
+    padding-bottom: 1em;
+    font-family: Tahoma, sans-serif;
+}
+
+.about hr {
+    width: 5%;
+    border: 2px solid rgb(92, 211, 111);
+}
+
+.about .about_title {
+    padding-bottom: 2em;
+}
+
+.about .container .left {
+    width: 60%;
+}
+
+.about .container .right {
+    padding: 1em;
+    width: 40%;
+}
+
+.about .container .right img {
+    width: 100%;
+}
+
+.videos {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.about .left p {
+    text-align: justify;
+    padding-right: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: rgb(139, 139, 139);
+}
+
+.schedule {
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.schedule .left {
+    width: 100%;
+    height: 100%;
+    background: rgb(129, 198, 224);
+}
+
+.schedule .right {
+    padding: 2em;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: url('./images/Volleyballmain.jpg') no-repeat center center/cover;
+    font-family: Tahoma, sans-serif;
+}
+
+.schedule .right p {
+    padding-top: 2em;
+}
+
+.schedule .right ul {
+    list-style: inside;
+}
+
+.schedule .right ul li {
+    padding: 1em;
+}
+
+.schedule .right hr {
+    width: 40px;
+    margin-top: 1em;
+    border: 2px solid white;
+}
+
+/* .schedule .left .box {
+    border: 6px solid rgb(98, 164, 189);
+    height: 110px;
+    width: 240px;
+    position: relative;
+    top: 12em;
+    left: 15em;
+} */
+
+.schedule h1 {
+    padding-top: 2em;
+    text-align: center;
+    font-size: 5em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    opacity: 0.7;
+}
+.schedule h2 {
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    opacity: 0.7;
+}
+
+
+.gallery {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 4em;
+}
+
+.gallery h3 {
+    text-align: center;
+    font-size: 2em;
+    padding-top: 1em;
+}
+
+.gallery hr {
+    border: 2px solid rgb(92, 211, 111);
+    width: 5%;
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+/* SNIPPET NICE CSS */
+
+.image-zoom-container {
+	list-style: none;
+	font-size: 0px;
+}
+.zoom-container {
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	width: 33.33%;
+	font-size: 16px;
+	font-size: 1rem;
+	border: 1px solid #fff;
+	vertical-align: top;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+.zoom-container img {
+	display: block;
+	width: 100%;
+	height: auto;
+	-webkit-transition: all .5s ease; /* Safari and Chrome */
+        -moz-transition: all .5s ease; /* Firefox */
+        -ms-transition: all .5s ease; /* IE 9 */
+        -o-transition: all .5s ease; /* Opera */
+        transition: all .5s ease;
+}
+.zoom-container .zoom-caption {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 10;
+	background: rgba(0, 0, 0, .5);
+	-webkit-transition: all .5s ease; /* Safari and Chrome */
+        -moz-transition: all .5s ease; /* Firefox */
+        -ms-transition: all .5s ease; /* IE 9 */
+        -o-transition: all .5s ease; /* Opera */
+        transition: all .5s ease;
+}
+.zoom-container .zoom-caption h3 {
+	display: block;
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1.5em;
+	font-weight: 900;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+	color: #fff;
+	margin: 23% 0 0;
+	padding: 10px 0;
+	border-top: 5px solid rgba(255, 255, 255, .15);
+	border-bottom: 5px solid rgba(255, 255, 255, .15);
+}
+.zoom-container:hover img {
+	-webkit-transform:scale(1.25); /* Safari and Chrome */
+        -moz-transform:scale(1.25); /* Firefox */
+        -ms-transform:scale(1.25); /* IE 9 */
+        -o-transform:scale(1.25); /* Opera */
+         transform:scale(1.25);
+}
+.zoom-container:hover .zoom-caption {
+	background: none;
+}
+ 
+@media (max-width: 639px) {
+	.zoom-container {
+		width: 50%;
+	}
+}
+ 
+@media (max-width: 480px) {
+	.zoom-container {
+		width: 100%;
+	}
+}
+
+
+/* END OF SNIPPET */
+
+
+.locate h3 {
+    text-align: center;
+    font-size: 2em;
+    padding-top: 1em;
+}
+
+.locate hr {
+    border: 2px solid rgb(92, 211, 111);
+    width: 5%;
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+i {
+    display: inline-block;
+}
+
+.contact p {
+    display: inline-block;
+    font-family: Tahoma, sans-serif;
+    padding: 1em;
+    font-size: 1.5em;
+}
+
+.contact h3 {
+    text-align: center;
+    font-size: 2em;
+    padding-top: 1em;
+}
+
+.contact hr {
+    border: 2px solid rgb(92, 211, 111);
+    width: 5%;
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+.contact .phone_email {
+    background: rgb(129, 198, 224);
+    width: 35%;
+    padding: 0.5em;
+    border-radius: 3%;
+    margin: auto;
+    margin-bottom: 5em;
+}
+
+.map {
+    width: 100%;
+}
+
+
+#main-footer {
+    text-align: center;
+    background: #444;
+    color: #fff;
+    padding: 20px;
+  }
+
+
+@media (max-width: 1200px) {
+    .contact p {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 1000px) {
+    .contact p {
+        font-size: 0.95em;
+    }
+
+    .schedule h1 {  
+        font-size: 4em;
+    }
+    .schedule h2 {     
+        font-size: 2em;
+    }
+}
+
+
+@media (max-width: 850px) {
+    #navbar ul li {
+        padding: 0.5em;
+    }
+
+    .contact p {
+        font-size: 0.8em;
+    }
+    .contact i {
+        font-size: 1em;
+    }
+}
+
+
+@media (max-width: 770px) {
+    #navbar ul li {
+        padding: 0.4em;
+        font-size: 1em;
+    }
+    #navbar .logo {
+        height: 6em;
+    }
+}
+
+
+
+@media (max-width: 451px) {
+    #showcase {
+        height: 500px;
+      }
+
+    .logo {
+        height: 6em;
+        padding: 1em;
+    }
+
+    #navbar {
+        display: block;
+    }
+
+    #navbar ul {
+        display: none;
+    }
+
+    .title_box {
+        text-align: center;
+        padding: 2em;
+        padding-top: 6em;
+    }
+    
+    .title_box h1 {
+        font-size: 4em;
+    }
+    
+    .title_box h3 {
+        font-size: 1.5em;
+    }
+
+    .about .info {
+        display: block;
+    }
+
+    .about {
+        margin: 2em;
+    }
+
+    .container {
+        padding: 0 10px;
+      }
+
+    .about .container .left {
+        width: 100%;
+    }
+
+    .about .container .right {
+        width: 100%;
+    }
+    
+
+    .about .left p {
+        text-align: justify;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        color: rgb(139, 139, 139);
+    }
+
+    .schedule .left {
+        padding: 1em;
+    }
+
+    .schedule h1 {
+        padding: 0;
+        font-size: 2em;
+    }
+
+    .schedule {
+        display: inline;
+    }
+
+    .contact .phone_email {
+        width: 75%;
+    }
+
+}
